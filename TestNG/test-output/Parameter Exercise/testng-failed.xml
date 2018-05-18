@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parameter Exercise]">
+  <test thread-count="5" name="Param Project(failed)">
+    <parameter name="Comment" value="Bonjour"/>
+    <parameter name="password" value="admin"/>
+    <parameter name="Email" value="agj235@gmail.com"/>
+    <parameter name="Contact No" value="7036268327"/>
+    <parameter name="First Name" value="Angel"/>
+    <parameter name="Middle Name" value="Gabriel"/>
+    <parameter name="Last Name" value="Jimenez"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="newPackage.parametersXML">
+        <methods>
+          <include name="param"/>
+        </methods>
+      </class> <!-- newPackage.parametersXML -->
+    </classes>
+  </test> <!-- Param Project(failed) -->
+</suite> <!-- Failed suite [Parameter Exercise] -->

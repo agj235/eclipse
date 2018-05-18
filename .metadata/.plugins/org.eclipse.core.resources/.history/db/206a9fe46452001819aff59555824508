@@ -1,0 +1,63 @@
+package stepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class FirstTestCase {
+	WebDriver driver;
+	
+	@Given("^I have a firefox browser running$")
+	public void i_have_a_firefox_browser_running()  {
+	   System.setProperty("webdriver.chrome.driver", "/Users/angeljimenez/Downloads/chromedriver");
+		driver = new ChromeDriver();
+		}
+	
+	@When("^I go to the website$")
+	public void i_go_to_the_website() throws Throwable {
+	    driver.get("http://www.flydulles.com/iad/dulles-international-airport");
+	}
+
+	@When("^click on hamburger icon$")
+	public void click_on_hamburger_icon() throws Throwable {
+	   driver.findElement(By.id("sidr-0-button")).click();
+	}
+
+	@When("^i should see options on left sidebar$")
+	public void i_should_see_options_on_left_sidebar() throws Throwable {
+	    driver.findElement(By.id("sidr-0")).isDisplayed();
+	}
+
+	@When("^I click on Flight Search icon$")
+	public void i_click_on_Flight_Seach_icon() throws Throwable {
+	    //driver.findElement(By)
+	}
+
+	@When("^I click on Arrivals$")
+	public void i_click_on_Arrivals() throws Throwable {
+	    
+	}
+
+	@When("^I click on Avianca logo$")
+	public void i_click_on_Avianca_logo() throws Throwable {
+	   
+	}
+
+	@Then("^I should be able to see \"([^\"]*)\"$")
+	public void i_should_be_able_to_see(String arg1) throws Throwable {
+	    
+	}
+
+	@Then("^I should be able to see Change Airline logo$")
+	public void i_should_be_able_to_see_Change_Airline_logo() throws Throwable {
+	    
+	}
+
+
+
+}

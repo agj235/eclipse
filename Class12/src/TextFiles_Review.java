@@ -1,0 +1,46 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class TextFiles_Review {
+
+	public static void main(String[] args) throws IOException {
+		
+		File  noteFile= new File("/Users/angeljimenez/eclipse-workspace/Class12/src/txtt");
+		
+		FileInputStream newFile = new FileInputStream(noteFile);
+		
+		FileWriter noteWriter = new FileWriter(noteFile);
+		
+		//noteWriter.write("Hello");
+		//noteWriter.
+		//noteWriter.write("Welcome");
+		//noteWriter.close();
+		
+		BufferedWriter BWriter = new BufferedWriter(noteWriter);
+		BWriter.write("Hello how are you?");
+		BWriter.newLine();
+		BWriter.write("I am good");
+		BWriter.close();
+		
+		FileReader fileRead=new FileReader(noteFile);
+		BufferedReader bufferRead=new BufferedReader(fileRead);
+	
+		String read;
+		while((read=bufferRead.readLine())!=null) {
+		System.out.println(read);
+			bufferRead.readLine();
+	}
+		BufferedWriter BWriter2 = new BufferedWriter(noteWriter);
+		BWriter2.write("I am good?");
+		BWriter2.newLine();
+		BWriter2.write("nice hows your day?");
+		BWriter2.close();
+		
+		BufferedReader bufferRead2 = new bufferRead2(noteFile);
+	}}

@@ -1,0 +1,67 @@
+package stepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class FirstTestCase {
+	WebDriver driver;
+	
+
+
+	@When("^I go to the Dulles website$")
+	public void i_go_to_the_Dulles_website()  {
+		driver.get("http://www.flydulles.com/iad/dulles-international-airport");
+	}
+	
+
+
+	@When("^click on hamburger icon$")
+	public void click_on_hamburger_icon()  {
+	   driver.findElement(By.id("sidr-0-button")).click();
+	}
+
+	@When("^i should see options on left sidebar$")
+	public void i_should_see_options_on_left_sidebar()  {
+	    driver.findElement(By.id("sidr-0")).isDisplayed();
+	}
+
+	@When("^I click on Flight Information icon$")
+	public void i_click_on_Flight_Information_icon()  {
+		driver.findElement(By.cssSelector("a.sidr-class-active > strong:nth-child(1)")).click();
+	}
+
+	@When("^I click on Flight Search icon$")
+	public void i_click_on_Flight_Seach_icon()  {
+	    driver.findElement(By.cssSelector("li.sidr-class-expanded:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)")).click();
+	}
+
+	@When("^I click on Arrivals$")
+	public void i_click_on_Arrivals()  {
+	    driver.findElement(By.id("arrivalsButton")).click();
+	}
+
+	@When("^I click on Avianca logo$")
+	public void i_click_on_Avianca_logo() {
+	   driver.findElement(By.className("btn btn-default btn-lg btn-block")).click();
+	}
+
+	@Then("^I should be able to see \"([^\"]*)\"$")
+	public void i_should_be_able_to_see(String date1, String date2)  {
+	    driver.findElement(By.cssSelector(date1)).isDisplayed();
+	    driver.findElement(By.cssSelector(date2)).isDisplayed();
+	}
+
+	@Then("^I should be able to see Change Airline logo$")
+	public void i_should_be_able_to_see_Change_Airline_logo()  {
+	    driver.findElement(By.cssSelector("img.center-block:nth-child(2)")).isDisplayed();
+	}
+
+
+
+}

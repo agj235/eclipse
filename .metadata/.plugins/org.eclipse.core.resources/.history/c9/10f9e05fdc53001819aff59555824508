@@ -1,0 +1,16 @@
+# Hooks
+
+Feature: As a valid user when i enter my credentials, I should be able to login
+
+
+  Scenario: As an editor i should be able to login to the application
+    
+    When I i go to the website
+    And I enter valid username and password
+     |Admin|admin|
+     
+     Scenario: As an editor i should be able to login to the application
+    
+    When I i go to the website
+    And I enter valid username and password
+     |administrator|admin|

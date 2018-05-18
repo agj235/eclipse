@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-05-01T00:09:22Z" name="Default suite" finished-at="2018-05-01T00:10:03Z" duration-ms="40503">
+    <groups>
+    </groups>
+    <test started-at="2018-05-01T00:09:22Z" name="Default test" finished-at="2018-05-01T00:10:03Z" duration-ms="40503">
+      <class name="newPackage.UsingDataProviders">
+        <test-method signature="OHRM(java.lang.String, java.lang.String)[pri:0, instance:newPackage.UsingDataProviders@1e66f1f5]" started-at="2018-05-01T00:09:22Z" name="OHRM" data-provider="Credentials" finished-at="2018-05-01T00:09:36Z" duration-ms="13408" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OHRM -->
+        <test-method signature="OHRM(java.lang.String, java.lang.String)[pri:0, instance:newPackage.UsingDataProviders@1e66f1f5]" started-at="2018-05-01T00:09:36Z" name="OHRM" data-provider="Credentials" finished-at="2018-05-01T00:09:49Z" duration-ms="13429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OHRM -->
+        <test-method signature="OHRM(java.lang.String, java.lang.String)[pri:0, instance:newPackage.UsingDataProviders@1e66f1f5]" started-at="2018-05-01T00:09:49Z" name="OHRM" data-provider="Credentials" finished-at="2018-05-01T00:10:03Z" duration-ms="13635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OHRM -->
+      </class> <!-- newPackage.UsingDataProviders -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

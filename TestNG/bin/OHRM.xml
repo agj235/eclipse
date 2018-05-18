@@ -1,0 +1,12 @@
+<suite name= "Orange HRM">
+		<test name = "Login">
+					<parameters>
+						<parameters name = "UID" value= "admin"/>
+						<parameters name = "PID"  value= "admin"/>
+						</parameters>
+						
+						<classes>
+									<class name ="TestNG.ParameterRevieww"/>
+						</classes>
+		</test>
+		</suite>

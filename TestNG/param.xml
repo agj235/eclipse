@@ -1,0 +1,20 @@
+<suite name = "Parameter Exercise">
+			<test name="Param Project" preserve-order= "true">
+						<parameter name="username" value="admin" />
+						<parameter name="password" value="admin" />
+						<parameter name="First Name" value="Angel" />
+						<parameter name="Middle Name" value="Gabriel" />
+						<parameter name="Last Name" value="Jimenez" />
+						<parameter name="Email" value="agj235@gmail.com" />
+						<parameter name="Contact No" value="7036268327" />
+						<parameter name="Comment" value="Bonjour" />
+			
+					<classes>
+								<class name = "newPackage.parametersXML">
+										<methods>
+											<include name = "param"/>
+										</methods>
+								</class>
+					</classes>									
+			</test>
+</suite>

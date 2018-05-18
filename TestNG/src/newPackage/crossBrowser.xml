@@ -1,0 +1,22 @@
+	<suite name = "Cross Browser Exercise" >
+			<test name="CrossBrowser" preserve-order= "true">
+			<parameter name="browser"  value="Chrome" />
+					<classes>
+								<class name = "newPackage.crossBrowserTesting">
+										<methods>
+											<include name = "verifyPage"/>
+										</methods>
+								</class>
+					</classes>									
+			</test>
+	<test name="Firefox CrossBrowser" preserve-order= "true">
+			<parameter name="browser"  value="Firefox" />
+					<classes>
+								<class name = "newPackage.crossBrowserTesting">
+										<methods>
+											<include name = "verifyPage"/>
+										</methods>
+								</class>
+					</classes>									
+			</test>
+</suite>

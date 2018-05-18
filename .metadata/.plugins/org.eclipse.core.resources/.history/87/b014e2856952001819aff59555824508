@@ -1,0 +1,19 @@
+
+Feature: As a Guest User I should be able to book a flight.
+  
+@Sprint1
+@Chrome
+ 
+  Scenario: As user I should be able to see Flight Search option on hamburger icon.
+    Given I have a chrome browser running
+    When I go to the website
+    And click on hamburger icon 
+    And i should see options on left sidebar
+    And I click on Flight Information icon
+    And I click on Flight Search icon
+    And I click on Arrivals
+    And I click on Avianca logo
+    Then I should be able to see "#dateLeftColumn > button:nth-child(1)" 
+    And I should be able to see "#dateMiddleColumn > button:nth-child(1)"
+   	And I should be able to see Change Airline logo
+

@@ -1,0 +1,18 @@
+<suite name = "HelloSuite">
+			<test name="YoMAma Project" preserve-order= "true">
+					<classes>
+								<class name = "testNG.ClassNG5">
+										<methods>
+											<include name = "program1"/>
+										</methods>
+								</class>
+								
+								<class name= "newPackage.anotherClass">
+										<methods>
+											<include name= "sum" />
+										</methods>
+								</class>
+									
+					</classes>									
+			</test>
+</suite>
